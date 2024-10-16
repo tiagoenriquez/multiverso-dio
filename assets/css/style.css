@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    --vermelho: rgb(187, 20, 31);
+}
+
+a {
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin: 2rem;
+    text-decoration: none;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.actor {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    margin: 4rem;
+    position: relative;
+    width: 20%;
+}
+
+.actor-photo {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.actor-name {
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    text-align: center;
+    bottom: 1rem;
+    width: 100%;
+}
+
+.main {
+    height: 80%;
+    width: 100%;
+}
+
+.main-body {
+    background-color: var(--vermelho);
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-nav {
+    height: 10%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

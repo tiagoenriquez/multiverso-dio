@@ -1,3 +1,5 @@
+import MultiversoController from "../controllers/MultiversoController.js";
+
 export default function PrincipalView(atores) {
     let html = `
     <div class="main-body">
@@ -25,4 +27,13 @@ export default function PrincipalView(atores) {
     </div>
     `;
     document.getElementsByTagName('body')[0].innerHTML = html;
+}
+
+const mainAElements = document.getElementsByClassName('main-a');
+
+for (let i = 0; i < mainAElements.length; i++) {
+    const element = mainAElements[i];
+    element.addEventListener('click', () => {
+        new MultiversoController().mostrarPrimeiroFilme(element.textContent);
+    });
 }

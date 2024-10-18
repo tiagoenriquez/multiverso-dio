@@ -15,6 +15,7 @@ export default class Filme {
         this.ano = ano;
         this.diretor = diretor;
         this.sinopse = sinopse;
+        this.imagensNaGaleria = [];
         this.adicionarImagensNaGaleria(imagensNaGaleria);
         this.adicionarImagensNaGaleria();
         this.obterImagemDeFundo();

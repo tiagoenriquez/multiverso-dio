@@ -7,6 +7,32 @@
     --vermelho: rgb(187, 20, 31);
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.column-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.unchecked-filme-a {
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    padding: 1rem;
+}
+
 a {
     color: white;
     cursor: pointer;
@@ -16,11 +42,21 @@ a {
     text-decoration: none;
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+button {
+    background-color: transparent;
+    border-radius: 1rem;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    width: 13rem;
+}
+
+p {
+    color: white;
+    margin: 0.5rem;
 }
 
 .actor {
@@ -46,6 +82,69 @@ a {
     text-align: center;
     bottom: 1rem;
     width: 100%;
+}
+
+.button-img {
+    background-color: var(--vermelho);
+    border-radius: 50%;
+    height: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 0.5rem;
+}
+
+.checked-filme-a {    
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: black;
+    padding: 1rem;
+}
+
+.filme-body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.filme-main {
+    height: 100%;
+    width: 80%;
+}
+
+.filme-menu {
+    height: 100%;
+    width: 20%;
+}
+
+.header-info {
+    background-color: var(--vermelho);
+    border-radius: 1rem;
+    color: white;
+    font-weight: bold;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+.info {
+    background-color: black;
+    border-radius: 1rem;
+    opacity: 80%;
+    padding: 1rem;
+    width: 50%;
+}
+
+.logo {
+    height: 30%;
+    top: 0;
+}
+
+.logo-img {
+    height: auto;
+    width: 60%;
 }
 
 .main {

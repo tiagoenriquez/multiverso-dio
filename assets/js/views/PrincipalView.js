@@ -1,6 +1,10 @@
 import MultiversoController from "../controllers/MultiversoController.js";
 
 export default function PrincipalView(atores) {
+    function mostrarFilme(ator) {
+        new MultiversoController().mostrarPrimeiroFilme(ator);
+    }
+
     let html = `
     <div class="main-body">
         <nav class="row main-nav">
@@ -27,13 +31,10 @@ export default function PrincipalView(atores) {
     </div>
     `;
     document.getElementsByTagName('body')[0].innerHTML = html;
-}
 
-const mainAElements = document.getElementsByClassName('main-a');
-
-for (let i = 0; i < mainAElements.length; i++) {
-    const element = mainAElements[i];
-    element.addEventListener('click', () => {
-        new MultiversoController().mostrarPrimeiroFilme(element.textContent);
+    atores.forEach((ator, index) => {
+        document.getElementsByClassName('main-a')[index].addEventListener('click', () => {
+            mostrarFilme(ator);
+        })
     });
 }

@@ -26,7 +26,7 @@ export default class Filme {
     adicionarImagensNaGaleria = (imagensNaGaleria) => {
         for (let i = 0; i < imagensNaGaleria; i++) {
             let imagem = `./assets/img/${this.ator.nomeAmigavel}/movie-${this.id.toString().padStart(2, '0')}`;
-            imagem += `/gallery/image-${i.toString().padStart(2, '0')}.png`;
+            imagem += `/gallery/image-${(i + 1).toString().padStart(2, '0')}.png`;
             this.imagensNaGaleria.push(imagem);
         }
     }

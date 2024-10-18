@@ -9,7 +9,7 @@ export default class MultiversoController {
     }
 
     mostrarPrimeiroFilme = (ator) => {
-        const filmesDoAtor = filmes.filter(filme => filme.ator.nome.toUpperCase() === ator);
+        const filmesDoAtor = filmes.filter(filme => filme.ator === ator);
         this.mostrarFilme(filmesDoAtor[0], filmesDoAtor);
     }
 
